@@ -1,0 +1,6 @@
+table{background-color: rgb(58, 23, 93);border: 1px solid black; width: 250px; height: 500px}
+body{background-color: aquamarine;}
+tbody > tr:first-child{background-color:greenyellow}
+tr:nth-child(2){background-color: brown;}
+th{border-color: white;border-width: 2px; border-style: solid;}
+thead > tr >th{color: white;}
