@@ -4,3 +4,8 @@ tbody > tr:first-child{background-color:greenyellow}
 tr:nth-child(2){background-color: brown;}
 th{border-color: white;border-width: 2px; border-style: solid;}
 thead > tr >th{color: white;}
+input{background-color:aquamarine ;margin-left: 10px;}
+input{border-top:none; border-left: none; border-right:none;}
+select{border-top:none; border-left: none; border-right:none;}
+select{background-color:aquamarine ;}
+
