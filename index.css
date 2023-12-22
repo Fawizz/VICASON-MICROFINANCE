@@ -1,10 +1,72 @@
-#hero-section{background-color: aqua;}
-.file{background-color: palevioletred; display:inline-block;width:200px;height:100px;padding:20px; }
-#no-charges{width:400px;}
-#herotext-section{ margin-left:auto; margin-right:auto;width:500px;}
-#file-section{margin-left:auto; margin-right:auto;width:1000px;color: whitesmoke;}
-nav{;background-color: ; display: inline-block;}
-header{display: flex; justify-content:space-around; align-items: center;}
-a{padding:10px;}
-div{background-color;color: aqua;display: inline-block;}
-li{width:200px;}
+#hero-section {
+    background-color: aqua;
+    background-image: url("images/pexels-elevate-digital-1647919.jpg"); 
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-blend-mode:normal;
+}
+
+.file {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+#no-charges {
+    width: 400px;
+}
+
+#herotext-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#file-section {
+    background-color: rgba(0, 0, 0,10%);
+    color:white;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+
+}
+
+nav {
+    display: inline-block;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    padding: 10px;
+}
+
+#herotext-section>H2 {
+    font-style: italic;
+    font-size: 50;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+#herotext-section>h1 {
+    font-style: italic;
+    font-size: 30;
+    margin-top:20px;
+    margin-bottom: 0%;
+    color: aqua;
+}
+#herotext-section>p {
+    font-weight:1000;
+    font-size: larger;
+    color: black;
+    
+}
