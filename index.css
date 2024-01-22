@@ -1,9 +1,8 @@
 #hero-section {
-    background-color: aqua;
-    background-image: url("images/pexels-elevate-digital-1647919.jpg"); 
-    background-repeat:no-repeat;
+    background-image: url("images/pexels-elevate-digital-1647919.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode:normal;
+    background-blend-mode: normal;
 }
 
 .file {
@@ -27,8 +26,8 @@
 }
 
 #file-section {
-    background-color: rgba(0, 0, 0,10%);
-    color:white;
+    background-color: rgba(0, 0, 0, 10%);
+    color: white;
     display: flex;
     justify-content: center;
     height: 200px;
@@ -36,7 +35,9 @@
 }
 
 nav {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
 }
 
 header {
@@ -46,7 +47,16 @@ header {
 }
 
 a {
-    padding: 10px;
+    /* padding: 10px; */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+a:active {color: green;/
+
 }
 
 #herotext-section>H2 {
@@ -60,13 +70,104 @@ a {
 #herotext-section>h1 {
     font-style: italic;
     font-size: 30;
-    margin-top:20px;
+    margin-top: 20px;
     margin-bottom: 0%;
     color: aqua;
 }
+
 #herotext-section>p {
-    font-weight:1000;
+    font-weight: 1000;
     font-size: larger;
     color: black;
-    
+}
+
+#signup {
+    border-top:1px solid;
+    border-bottom:1px solid;
+    border-left:1px solid;
+    border-right:1px solid;
+    color:black;
+    padding:10px;
+
+}
+
+#sidekick{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-areas:"HIW HIW HIW" "howitworks MoneyinYourAccount RepayYourLoan";  
+    justify-content: center;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: larger;
+    column-gap: 50px;
+    row-gap:20px;
+}
+
+#Howitworks{
+    grid-area:howitworks;
+}
+
+#MoneyinYourAccount{
+    grid-area:MoneyinYourAccount;
+   
+}
+
+#RepayYourLoan{
+    grid-area:RepayYourLoan;
+  
+}
+
+#HIW{
+    grid-area:HIW;
+}
+#HIW>h1{
+    text-align: center;
+    font-size: xx-large;
+}
+#FAQ>h1{
+text-align: center;
+font-size: xx-large;
+}
+body{
+    background-color: cornsilk;
+}
+#ABOUTUS>h1{
+    text-align: center;
+    font-size: xx-large;
+}
+#ABOUTUS{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    font-size: large;
+    grid-template-areas: "au  au"  "logo  vl";
+   justify-content: center;
+  justify-items: center;
+}
+#AN>a{
+    text-align: center;
+    border-top:1px solid;
+    border-bottom:1px solid;
+    border-left:1px solid;
+    border-right:1px solid;
+    color:black;
+    padding:10px;
+
+}
+#AN{
+
+    grid-area: an;
+}
+#au{
+    grid-area:au;
+
+}
+#vl{
+    grid-area: vl;
+   
+}
+#logo{
+    grid-area: logo;
+    display: grid;  
+}
+#vlogo{width:150px;
+
 }
