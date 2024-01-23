@@ -127,6 +127,14 @@ a:active {color: green;/
 text-align: center;
 font-size: xx-large;
 }
+#FAQs{
+ margin: auto;
+    width: 900px;
+    font-size: 1.2rem;
+    line-height: 2.0rem;
+}
+    
+
 body{
     background-color: cornsilk;
 }
@@ -170,4 +178,37 @@ body{
 }
 #vlogo{width:150px;
 
+}
+#footsection{
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    font-size: large;
+    grid-template-areas: "stay stay stay stay"  "cc  location tiwtter facebook " "line line line line"" anya anya anya anya";
+  justify-items: center;
+  text-align: center;
+  font-size: medium;
+}
+#stay{
+    grid-area: stay;
+}
+
+#CC{
+    grid-area:cc;
+}
+#location{
+    grid-area: location;
+}
+#tiwtter{
+    grid-area:tiwtter ;
+}
+#facebook{
+    grid-area:facebook;
+}
+#anya{
+    grid-area: anya;
+}
+#line{
+    grid-area: line;
+    border: 1px solid green;
+    width: 1000px;
 }

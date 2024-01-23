@@ -1,0 +1,153 @@
+/*modal*/
+.advert {
+	height: 100%;
+	padding-bottom: 0px;
+}
+.carousel-control {
+	width: 10%;
+}
+.modal-header {
+	border-bottom: 3px solid #009999;
+	border-top: 3px solid #009999;
+	text-align: center;
+	color: #009999;
+}
+.modal-title {
+	font-size: 40px;
+
+}
+.modal-body {
+	background:url(../img/background/bg-2.jpg);
+	color:#fff;
+}
+.modal-footer {
+	border-bottom: 3px solid #009999;
+	border-top: 3px solid #009999;
+	text-align: center;
+	color: #009999;
+}
+.launch-icon {
+	color: orange;
+	font-size: 24px;
+}
+#clock {
+	text-align: center;
+}
+#clock span {
+	color: orange;
+	font-size: 20px;
+	border:solid 2px #099;
+	border-radius: 50px;
+	padding: 5px;
+}
+
+/*end of modal*/ 
+th {
+	 color:#099;
+ }
+ tr td .btn {
+	 margin:0px 5px;
+ }
+ .zero-margin {
+	  margin:10px 0px;
+ }
+ .accHeader {
+	 color:#009999;
+ }
+ .social {
+	color:#fff;
+}
+ .protal-overlay {
+	 background:rgba(200, 200, 200, .8);
+	margin:30px 0px 0px 0px;
+ }
+ .left-block {
+	 background:rgba(255, 255, 255, .9);
+	 height:500px;
+	 overflow:scroll;
+	 border-bottom:solid 2px #099;
+	 margin:0px;
+ }
+ .left-block-content {
+	 background:rgba(220, 220, 220, .8);
+	 margin:1px;
+	 padding:2px;
+	 color:#333;
+ }
+ .center-block {
+	
+}
+.clientName {
+	text-transform:uppercase;
+	font-weight:bold;
+	font-style:italic;
+}
+ .main-content {
+	  background:rgba(255, 255, 255, .9);
+	  color:#333;
+ }
+ .content-text {
+	 background:rgba(240, 240, 240, .8);
+	 border-bottom:solid 2px #099;
+	 margin:2px;
+ }
+ .content-title {
+	 background:#009999;
+	 color:#fff;
+ }
+ .green-link a {
+	 color:#009999;
+ }
+ .btn-apply {
+	 background:none;
+	 border:none;
+ }
+ .btn-apply-area {
+	 padding-top:100px;
+ }
+ .white-header {
+	 color:red;
+ }
+ .reg-overlay {
+	 background:rgba(40, 40, 40, .5);
+ }
+ .reg-overlay .row {
+	background:rgba(50, 50, 50, .5);
+	padding:15px;
+	margin-bottom:20px;
+ }
+ #why-chose .row {
+	background:rgba(244, 244, 244, .4);
+ }
+ .form-row {
+	 margin:0px 15px;
+ }
+ .btn-apply-area i {
+	 text-shadow:1px 2px 1px #fff;
+	 color:#009999;
+ }
+ form label {
+	 margin-left:-15px;
+ }
+ /* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .fa {
+  position: absolute;
+  padding: 7px;
+  margin:2px;
+  pointer-events: none;
+  color:#009999;
+  background:#fff;
+}
+
+/* align icon */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }

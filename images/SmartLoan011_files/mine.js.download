@@ -1,0 +1,73 @@
+// $(document).ready(function () { 
+// 	alert("ljklkjsd");
+		$(".datepicker").datepicker( {
+	    format: "M/yyyy",
+	    viewMode: "months", 
+	    minViewMode: "months"
+	});
+
+	
+
+
+// $("#app-nysc, #app-others").change(function () {
+//         if ($("#app-nysc").is(":checked")) {
+//             $(".corppers").show();
+//             $(".others").hide();
+//         }
+//         else if ($("#app-others").is(":checked")) {
+//             $(".corppers").hide();
+//             $(".others").show();
+//         }
+       
+//     }); 
+
+// });
+$('#clock').countdown('2017/03/01', function(event) {
+  var $this = $(this).html(event.strftime(''
+    
+    + '<span>%d</span> days '
+    + '<span>%H</span> hr '
+    + '<span>%M</span> min '
+    + '<span>%S</span> sec'));
+});
+
+
+$('#approve').click(function(){
+	var appId = $('#approve').attr('data-page');
+	
+		$.post('updater.php', { appId: appId},function(data) //send username for checking
+				 {		
+					$('#feedback').html(data);
+					
+				 });
+	
+});
+
+$('#disapprove').click(function(){
+	
+	var disAppId = $('#disapprove').attr('data-page');
+	
+		$.post('updater.php', { disAppId: disAppId},function(data) //send username for checking
+			{		
+				$('#feedback').html(data);
+					
+			});
+	
+});
+
+$('#email').keyup(function(){
+	var email = $('#email').val();
+	// alert(email);
+	$.post('accountChecker.php', { email: email},function(data) //send username for checking
+			{		
+				
+				if(data == "exist" ){ //email already exist
+					$('#eFeedback').html("<font color='red'>This email is already registered</font>");
+					$('#btnSignup').attr('disabled', 'disabled');
+				}else {
+					$('#btnSignup').removeAttr('disabled');
+					$('#eFeedback').html("");
+				}
+					
+			});
+});
