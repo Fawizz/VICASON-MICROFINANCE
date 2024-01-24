@@ -10,6 +10,7 @@
     height: 100px;
     padding: 20px;
     margin-left: 50px;
+    text-align: center;
 }
 
 #no-charges {
@@ -187,9 +188,18 @@ body{
   justify-items: center;
   text-align: center;
   font-size: medium;
+  justify-content: space-around;
+}
+#stay>h1{
+    font-size:35px;
+    font-stretch: extra-expanded;
+}
+#stay>p{
+    font-size: 25px;
 }
 #stay{
     grid-area: stay;
+    margin:50px;
 }
 
 #CC{
@@ -204,6 +214,9 @@ body{
 #facebook{
     grid-area:facebook;
 }
+i{
+font-size: 50px;
+}
 #anya{
     grid-area: anya;
 }
@@ -212,3 +225,15 @@ body{
     border: 1px solid green;
     width: 1000px;
 }
+.green-color{
+    color: green;
+    display: flex;
+    justify-content: center;
+}
+.color{
+    color: aqua;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+    
